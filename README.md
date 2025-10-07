@@ -21,7 +21,7 @@ Here, I’ll walk through what happens to a support ticket from the moment it’
 
 ---
 
-## 🎯 Overview
+##  Overview
 
 We’ll look at how a ticket moves through each stage in osTicket:
 
@@ -32,7 +32,7 @@ We’ll look at how a ticket moves through each stage in osTicket:
 
 ---
 
-## 🧾 Stage 1: Ticket Intake — Creating a Ticket
+##  Stage 1: Ticket Intake — Creating a Ticket
 
 Start by opening **osTicket** in your browser.  
 
@@ -55,7 +55,7 @@ Then click **Create Ticket**.
 
 ---
 
-## 👩‍💻 Stage 2: Assignment and Communication
+##  Stage 2: Assignment and Communication
 
 Next, log in to osTicket as an **Agent** (for example, `jane.doe`, which we created in Part 2).  
 From the dashboard, select the ticket created in Stage 1.
@@ -81,7 +81,7 @@ Click **Post Reply** to save your response and update the ticket status.
 
 ---
 
-## 🛠 Stage 3: Working the Issue
+## Stage 3: Working the Issue
 
 Behind the scenes, Jane and the **Systems Administration Team** are investigating the outage.  
 They communicate and log updates directly in the ticket so the progress is visible to everyone involved.  
@@ -89,7 +89,7 @@ This step represents the actual troubleshooting phase where the problem is being
 
 ---
 
-## ✅ Stage 4: Resolution
+##  Stage 4: Resolution
 
 Once the issue is fixed, it’s time to close out the ticket properly.  
 Head back to the ticket and reply to the user with an update.
@@ -108,14 +108,14 @@ The ticket will automatically move to the **Closed** tab.
 
 ---
 
-## 🎉 Wrap-Up
+##  Wrap-Up
 
 And that’s it! You’ve successfully taken a support ticket from start to finish — from intake to resolution.  
 .  
 
 
 
-Pretty cool seeing it all come together! 🚀
+Pretty cool seeing it all come together! 
 
 ---
 
