@@ -2,119 +2,124 @@
   <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1 align="center">osTicket - Ticket Lifecycle: From Intake to Resolution</h1>
-
-This project serves as **Part 3** in my osTicket tutorial series.  
-In this section, I demonstrate the complete lifecycle of a helpdesk ticket — from initial submission to final resolution — within the open-source ticketing platform **osTicket**.
-
+<h1 align="center">osTicket: Ticket Lifecycle — From Intake to Resolution</h1>
+  
+Here, I’ll walk through what happens to a support ticket from the moment it’s submitted until it’s fully resolved.  
 ---
 
-## 🧩 Technologies & Tools Utilized
+## ⚙️ Tools and Environment
 
-- **Microsoft Azure** – Virtual Machines / Compute Resources  
-- **Remote Desktop Protocol (RDP)**  
+- **Microsoft Azure** (Virtual Machines / Compute)
+- **Remote Desktop**
 - **Internet Information Services (IIS)**  
 
 ---
 
-## 💻 Operating System Used
+## 💻 System Info
 
 - **Windows 10 (21H2)**  
 
 ---
 
-## 🔁 Ticket Lifecycle Overview
+## 🎯 Overview
 
-- Ticket Intake  
-- Assignment & Communication  
-- Issue Resolution Process  
-- Closing the Ticket  
+We’ll look at how a ticket moves through each stage in osTicket:
+
+1. Ticket Intake  
+2. Assignment & Communication  
+3. Working the Issue  
+4. Resolution  
 
 ---
 
-## 📝 Stage 1: Ticket Intake – Creating a New Ticket
+## 🧾 Stage 1: Ticket Intake — Creating a Ticket
 
-Launch **osTicket**.  
-If osTicket has not yet been installed or configured, refer to:
+Start by opening **osTicket** in your browser.  
 
-- [Part 1 – Prerequisites & Installation](https://github.com/RoslyndWilliams/osTicket--Prerequisites-and-Installation)  
-- [Part 2 – Post-Install Configuration](https://github.com/RoslyndWilliams/osTicket--Post-Install-Configuration)  
 
-Create a new support ticket using the following details:
+Once osTicket is open, select **“Open a New Ticket.”**  
+Fill out the form as follows:
 
-- **Email Address:** johnson@osTicket.com  
+- **Email:** johnson@osTicket.com  
 - **Name:** Keyana Johnson  
 - **Help Topic:** Business Critical Outage  
-  - **Issue Summary:** Mobile online banking system is down  
-  - **Details:** Customers are receiving a 404 error when accessing the online banking portal  
+- **Issue Summary:** Entire mobile online banking is down  
+- **Details:** Customers are seeing a 404 error when visiting the online banking page  
+
+Then click **Create Ticket**.
 
 <p align="center">
-  <img src="https://i.imgur.com/G7Ak6uI.png" width="70%" alt="osTicket ticket creation"/>  
-  <img src="https://i.imgur.com/UdiPc1s.png" width="70%" alt="osTicket help topic"/>
+  <img src="https://i.imgur.com/G7Ak6uI.png" width="70%" alt="Creating a new ticket"/>  
+  <img src="https://i.imgur.com/UdiPc1s.png" width="70%" alt="Ticket submission form"/>
 </p>
 
 ---
 
-## 🧭 Stage 2: Assignment & Communication
+## 👩‍💻 Stage 2: Assignment and Communication
 
-Log in to osTicket as an **Agent** (for example, the `jane.doe` account created in the previous tutorial).  
-Select the ticket submitted in Stage 1.
+Next, log in to osTicket as an **Agent** (for example, `jane.doe`, which we created in Part 2).  
+From the dashboard, select the ticket created in Stage 1.
 
 <p align="center">
-  <img src="https://i.imgur.com/sDgzS36.png" width="80%" alt="osTicket agent view"/>
+  <img src="https://i.imgur.com/sDgzS36.png" width="80%" alt="Agent ticket view"/>
 </p>
 
-Update the ticket details as follows:
+Now, update the ticket details:
 
-- **Priority:** Emergency (business-critical outage)  
+- **Priority:** Emergency — since the banking outage affects revenue  
 - **Assigned To:** Jane Doe  
-- **SLA Plan:** SEV-A (Severe – critical incident)  
-- **Department:** System Administrators (responsible for mobile banking infrastructure)  
-- **Response Message:** “Coordinating with the SysAdmin team to restore mobile banking services.”  
+- **SLA Plan:** SEV-A (Critical / Business-impacting)  
+- **Department:** System Administrators  
+- **Response:** “Coordinating with the SysAdmin team to bring mobile banking back online.”  
 
-Select **Post Reply** to update the ticket.
+Click **Post Reply** to save your response and update the ticket status.
 
 <p align="center">
-  <img src="https://i.imgur.com/Du3kmui.png" width="80%" alt="osTicket reply"/>  
-  <img src="https://i.imgur.com/yg9TXep.png" width="80%" alt="osTicket SLA setup"/>
+  <img src="https://i.imgur.com/Du3kmui.png" width="80%" alt="osTicket reply example"/>  
+  <img src="https://i.imgur.com/yg9TXep.png" width="80%" alt="Ticket updates"/>
 </p>
 
 ---
 
-## ⚙️ Stage 3: Working the Issue
+## 🛠 Stage 3: Working the Issue
 
-Behind the scenes, Jane collaborates with the **Systems Administration Team** to identify and fix the issue causing the outage.  
-All communication and status updates can be logged directly in osTicket for visibility and documentation.
+Behind the scenes, Jane and the **Systems Administration Team** are investigating the outage.  
+They communicate and log updates directly in the ticket so the progress is visible to everyone involved.  
+This step represents the actual troubleshooting phase where the problem is being worked on internally.
 
 ---
 
-## ✅ Stage 4: Resolution & Ticket Closure
+## ✅ Stage 4: Resolution
 
-Once the issue has been resolved, update the end user:
+Once the issue is fixed, it’s time to close out the ticket properly.  
+Head back to the ticket and reply to the user with an update.
 
-**Response:**  
-> Jerry from System Engineering identified and reconnected a failed load balancer.  
-> Mobile banking services have been restored.
+**Example Response:**  
+> Jerry from the System Engineering team located and reconnected a failed load balancer.  
+> Mobile banking services are now restored and everything should be back online.
 
-- **Ticket Status:** Resolved  
-- Click **Post Reply**
-
-The ticket will now automatically move to the **Closed** tab, marking the end of the support lifecycle.
+Set the **Ticket Status** to **Resolved**, then click **Post Reply**.  
+The ticket will automatically move to the **Closed** tab.
 
 <p align="center">
-  <img src="https://i.imgur.com/et8h651.png" width="80%" alt="osTicket resolution"/>  
-  <img src="https://i.imgur.com/TUo3T0Q.png" width="80%" alt="osTicket closed ticket"/>
+  <img src="https://i.imgur.com/et8h651.png" width="80%" alt="Ticket resolved"/>  
+  <img src="https://i.imgur.com/TUo3T0Q.png" width="80%" alt="Closed ticket view"/>
 </p>
 
 ---
 
-## 🎉 Completion
+## 🎉 Wrap-Up
 
-You’ve successfully created, managed, and resolved a ticket within osTicket!  
-This concludes **Part 3** of my osTicket tutorial series, covering the **full ticket lifecycle** — from intake through resolution.
+And that’s it! You’ve successfully taken a support ticket from start to finish — from intake to resolution.  
+.  
+
+
+
+Pretty cool seeing it all come together! 🚀
 
 ---
 
-**Author:** Kolby Sowell  
+**Created by:** *Kolby Sowell*  
 **Project Type:** IT Help Desk / System Administration Portfolio Project  
-**Platform:** osTicket (Open Source Helpdesk Ticketing System)  
+**Platform:** osTicket (Open Source Helpdesk Ticketing System)
+
